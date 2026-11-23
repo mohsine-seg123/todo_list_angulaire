@@ -1,0 +1,171 @@
+
+.container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.task-form input,
+.task-form textarea,
+.edit-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.task-form textarea {
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 14px;
+  cursor: pointer;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.add-button {
+  background: #2563eb;
+  align-self: flex-start;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.task-content {
+  flex: 1;
+  min-width: 180px;
+}
+
+.task-content h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.task-content p {
+  color: #777;
+  margin: 0 0 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.status {
+  display: inline-block;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.status-done {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.edit-button {
+  background: #2563eb;
+}
+
+.complete-button,
+.save-button {
+  background: #15945a;
+}
+
+.delete-button {
+  background: #dc3545;
+}
+
+.cancel-button {
+  background: #64748b;
+}
+
+.empty-message,
+.info-message {
+  padding: 25px;
+  text-align: center;
+  color: #777;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+}
+
+.error-message {
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 5px;
+}
+
+.statistics {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f3f4f6;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  .task-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
